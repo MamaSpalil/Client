@@ -21,6 +21,7 @@
 #include "ButtonChar.h"
 #include "SelectChar.h"
 #include "LuckyWheel.h"
+#include "AutoClickerUI.h"
 
 CInterface * gInterfaces = new CInterface();
 
@@ -98,6 +99,7 @@ void CInterface::MainProc()
 	}
 
 UPDATE_FPS();
+	gAutoClickerUI.Draw();
 	SetWindowText((*(HWND*)(MAIN_WINDOW)), "A2K - MuOnline Season III Ultimate");
 #if(_JEWELS_BANK_)
 	

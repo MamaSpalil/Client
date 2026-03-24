@@ -73,6 +73,7 @@
     <ClInclude Include="AntiCheat.h" />
     <ClInclude Include="AntiCheatPlus.h" />
     <ClInclude Include="AttackHelper.h" />
+    <ClInclude Include="AutoClickerUI.h" />
     <ClInclude Include="base64.h" />
     <ClInclude Include="BMDLoad.h" />
     <ClInclude Include="ButtonChar.h" />
@@ -151,6 +152,7 @@
     <ClCompile Include="AntiCheat.cpp" />
     <ClCompile Include="AntiCheatPlus.cpp" />
     <ClCompile Include="AttackHelper.cpp" />
+    <ClCompile Include="AutoClickerUI.cpp" />
     <ClCompile Include="base64.cpp" />
     <ClCompile Include="BMDLoad.cpp" />
     <ClCompile Include="ButtonChar.cpp" />

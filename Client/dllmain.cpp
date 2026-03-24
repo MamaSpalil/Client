@@ -39,6 +39,7 @@
 #include "Map.h"
 #include "Fog.h"
 #include "RageSystem.h"
+#include "AutoClickerUI.h"
 #pragma comment( lib, "opengl32.lib" )  
 #pragma comment( lib, "glu32.lib" )  
 #pragma comment(lib, "detours2.lib")
@@ -67,7 +68,7 @@ void APIENTRY glEnable_Hooked(GLenum cap)
 
 	GLfloat rgba[4] = { rgb.r, rgb.g, rgb.b, rgb.a };
 
-	// Сглаживание текстур: проблема с прорисовкой
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	if (GLTEX_ENABLED == true)
 	{
 		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -306,6 +307,7 @@ extern "C" __declspec(dllexport)void Init()
 	gGlow.Load();
 	gCamera->Init();
 	gAttackHelper->Init();
+	gAutoClickerUI.Init();
 	gController.Load();
 	KeyboardSetHook(true);
 	gObjUser.Load();
