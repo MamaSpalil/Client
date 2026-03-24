@@ -15,6 +15,7 @@
 #include "Controller.h"
 #include "DungeonSiege.h"
 #include "ExTeleport.h"
+#include "AutoClickerUI.h"
 
 BOOL MouseWellButtonDown;
 BOOL MouseLeftButtonDown;
@@ -112,6 +113,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		break;
 	case WM_LBUTTONUP:
 		MouseLeftButtonDown = false;
+		gAutoClickerUI.MouseClickProc();
 		gInterfaces->MouseClickProc();
 		gExInterface->MouseClickProc();
 		MouseClickTP();

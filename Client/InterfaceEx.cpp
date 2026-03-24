@@ -18,6 +18,8 @@
 #include "AdvancedStats.h"
 //#include "WndProc.h"
 
+#include "AutoClickerUI.h"
+
 CExInterface * gExInterface = new CExInterface;
 ServerTime g_ServerTime;
 
@@ -127,6 +129,8 @@ void LoadImages(int a1, int a2, int a3, HDC a4)//(HDC ItemID)
 	 LoadImagesTGA("Customs\\Interface\\LoginBtn.tga", 151, 9729, 10496, 0, 1);
 
 	LoadImagesTGA("Customs\\Interface\\fps_bg.tga", 334, 9729, 10496, 0, 1);
+
+	gAutoClickerUI.LoadImages();
 
 	LoadImagesJPG( "Customs\\Interface\\left.jpg", 2000, 9728, 10496, 0, 1);
 	LoadImagesJPG( "Customs\\Interface\\right.jpg", 1999, 9728, 10496, 0, 1);

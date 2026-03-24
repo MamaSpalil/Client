@@ -18,6 +18,7 @@
 #include "WndProc.h"
 #include "DungeonSiege.h"
 #include "console.h"
+#include "AutoClickerUI.h"
 
 // ----------------------------------------------------------------------------------------------
 //WPARAM mParam;
@@ -113,6 +114,16 @@ LRESULT Controller::Keyboard(int Code, WPARAM wParam, LPARAM lParam)
 		}
 		switch(wParam)
 		{
+			case VK_F5:
+			{
+				gAutoClickerUI.ToggleStartStop();
+			}
+			break;
+			case VK_F9:
+			{
+				gAutoClickerUI.OpenSettings();
+			}
+			break;
 			/*case VK_F6:
 			{
 				if (gInterfaces->StateFog == 1)
@@ -264,6 +275,7 @@ LRESULT Controller::Keyboard(int Code, WPARAM wParam, LPARAM lParam)
 			gMenuSystem.Active=false;
 			g_DungeonSiege.Active=false;
 			gInterfaces->StateWare = 0;
+			gAutoClickerUI.CloseHistory();
 			//gInterfaces->Data[eLuckyWheelMain].OnShow = false;
 #ifdef MULTI_WAREHOUSE
 			gInterfaces->Close_DrawBankCountWindow();

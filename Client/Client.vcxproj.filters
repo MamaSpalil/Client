@@ -82,6 +82,9 @@
     <Filter Include="Interface\AttackHelper">
       <UniqueIdentifier>{12a9778a-d9ee-40e3-9653-57e9ed41013c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Interface\AutoClickerUI">
+      <UniqueIdentifier>{a1b2c3d4-e5f6-7890-abcd-ef1234567890}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Interface\GrandReset">
       <UniqueIdentifier>{622c93d0-f4ee-4291-bbe0-e3fb1764db68}</UniqueIdentifier>
     </Filter>
@@ -296,6 +299,9 @@
     <ClInclude Include="AttackHelper.h">
       <Filter>Interface\AttackHelper</Filter>
     </ClInclude>
+    <ClInclude Include="AutoClickerUI.h">
+      <Filter>Interface\AutoClickerUI</Filter>
+    </ClInclude>
     <ClInclude Include="GrandReset.h">
       <Filter>Interface\GrandReset</Filter>
     </ClInclude>
@@ -496,6 +502,9 @@
     </ClCompile>
     <ClCompile Include="AttackHelper.cpp">
       <Filter>Interface\AttackHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoClickerUI.cpp">
+      <Filter>Interface\AutoClickerUI</Filter>
     </ClCompile>
     <ClCompile Include="GrandReset.cpp">
       <Filter>Interface\GrandReset</Filter>
