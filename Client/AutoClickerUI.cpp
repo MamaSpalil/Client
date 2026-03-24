@@ -36,19 +36,10 @@ void CAutoClickerUI::Draw()
 	// FPS background is at pos_x=0, pos_y=0/0.5, width=66, height=28
 	// Place buttons right after FPS display
 	float btn_x = 68.0f;
-	float btn_y = 0.0f;
+	float btn_y = 3.0f;
 	float btn_w = 22.0f;
 	float btn_h = 22.0f;
 	float btn_spacing = 2.0f;
-
-	if (MAIN_RESOLUTION_WIDTH > 800)
-	{
-		btn_y = 3.0f;
-	}
-	else
-	{
-		btn_y = 3.0f;
-	}
 
 	EnableAlphaTest(true);
 	glColor3f(1.0f, 1.0f, 1.0f);
