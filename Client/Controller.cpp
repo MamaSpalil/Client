@@ -119,11 +119,11 @@ LRESULT Controller::Keyboard(int Code, WPARAM wParam, LPARAM lParam)
 				gAutoClickerUI.ToggleStartStop();
 			}
 			break;
-			case VK_F9:
+			/*case VK_F9:
 			{
-				gAutoClickerUI.OpenSettings();
+				// F9 is now handled by LordOfMU.dll (AVANTA+ELITE autoclicker menu)
 			}
-			break;
+			break;*/
 			/*case VK_F6:
 			{
 				if (gInterfaces->StateFog == 1)
