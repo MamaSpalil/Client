@@ -173,22 +173,9 @@ void CAutoClickerUI::ToggleStartStop()
 
 void CAutoClickerUI::OpenSettings()
 {
-	// Same as F9 - open attack helper settings (select mode)
-	if (gAttackHelper->State == ATTACKHELPER_STATE_Running)
-	{
-		pSendChatTextEx((const char*)"", (const char*)"Attack Helper Off", Red);
-		gAttackHelper->SetState(ATTACKHELPER_STATE_Stop);
-	}
-	else if (gAttackHelper->State == ATTACKHELPER_STATE_Stop)
-	{
-		pSendChatTextEx((const char*)"", (const char*)"Attack Helper - Select Mode", Blue);
-		gAttackHelper->SetState(ATTACKHELPER_STATE_SelectMode);
-	}
-	else
-	{
-		pSendChatTextEx((const char*)"", (const char*)"Attack Helper Off", Red);
-		gAttackHelper->SetState(ATTACKHELPER_STATE_Stop);
-	}
+	// Simulate F9 key press to open AVANTA+ELITE autoclicker menu (LordOfMU.dll)
+	keybd_event(VK_F9, 0, 0, 0);
+	keybd_event(VK_F9, 0, KEYEVENTF_KEYUP, 0);
 }
 
 void CAutoClickerUI::ToggleHistory()
